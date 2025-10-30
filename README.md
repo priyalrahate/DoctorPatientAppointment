@@ -4,7 +4,7 @@
 
 BookMyDoc is a web-based doctor appointment system designed to streamline medical consultation scheduling. It allows patients to book appointments with doctors, receive updates, and leverage machine learning for disease prediction based on symptoms.
 
-- **Live Demo**: [BookMyDoc - Live](https://bookmydoc-five.vercel.app/) [Backend deployed on Render free tier, may take a moment to load initially]
+- **Live Demo**:
 
 ---
 
@@ -41,7 +41,7 @@ BookMyDoc is a web-based doctor appointment system designed to streamline medica
 ---
 
 - **Website Demo Video (Youtube link)**: <br> <br>
- [![YouTube](http://i.ytimg.com/vi/uO-ocNwpnIA/hqdefault.jpg)](https://www.youtube.com/watch?v=uO-ocNwpnIA)
+
 
 ---
 
@@ -155,18 +155,4 @@ BookMyDoc is a web-based doctor appointment system designed to streamline medica
     python app.py
     ```
 
----
 
-## Contributors
-
-- **[Param Bhavasar](https://github.com/ParamPS25)** - Backend Development  
-- **[Purv Patel](https://github.com/purvpatel123)** - Frontend Development  
-- **[Prit Patel](https://github.com/Pritlimbani269)** - Frontend Development  
-- **[Prince Patel](https://github.com/prince2004patel)** - Machine Learning  
-
-
----
-
-## License
-
-- This project is licensed under the **MIT License**.
