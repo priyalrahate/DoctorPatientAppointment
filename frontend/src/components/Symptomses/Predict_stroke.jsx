@@ -73,11 +73,11 @@ const Predict_stroke = () => {
     const prepared = { ...data };
     
     // Convert Yes/No to 1/0 for hypertension and heart_disease
-    if (prepared.hypertension === "Yes") prepared.hypertension = "1";
-    if (prepared.hypertension === "No") prepared.hypertension = "0";
+    if (prepared.hypertension === "Yes") prepared.hypertension = 1;
+    if (prepared.hypertension === "No") prepared.hypertension = 0;
     
-    if (prepared.heart_disease === "Yes") prepared.heart_disease = "1";
-    if (prepared.heart_disease === "No") prepared.heart_disease = "0";
+    if (prepared.heart_disease === "Yes") prepared.heart_disease = 1;
+    if (prepared.heart_disease === "No") prepared.heart_disease = 0;
 
     // Convert string numbers to actual numbers
     prepared.age = parseFloat(prepared.age);
@@ -186,7 +186,7 @@ const Predict_stroke = () => {
   };
 
   const resultCardStyle = {
-    backgroundColor: prediction === 1 ? "#ffe6e6" : "#e6ffe6",
+    backgroundColor: prediction === "Stroke" ? "#ffe6e6" : "#e6ffe6",
     padding: "20px",
     marginTop: "20px",
     borderRadius: "10px",
@@ -255,10 +255,10 @@ const Predict_stroke = () => {
         {prediction !== null && (
         <div ref={resultRef} style={resultCardStyle}>              
           <h3 style={{ marginBottom: "10px", fontSize: "18px" }}>
-            Prediction Result: {prediction === 1 ? "Positive" : "Negative"}
+            Prediction Result: {prediction === "Stroke" ? "Positive" : "Negative"}
           </h3>
           <p style={{ fontSize: "14px", color: "#666" }}>
-            {prediction === 1 
+            {prediction === "Stroke" 
               ? "The system predicts a higher risk of stroke. Please consult with a healthcare professional."
               : "The system predicts a lower risk of stroke. However, always maintain a healthy lifestyle."
             }
@@ -270,3 +270,6 @@ const Predict_stroke = () => {
 };
 
 export default Predict_stroke;
+
+
+
